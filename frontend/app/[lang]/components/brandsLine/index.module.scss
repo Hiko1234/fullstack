@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.brands {
+    padding: 32px;
+    background-color: $primary;
+
+    @media(max-width: $mp4) {
+        padding: 16px;
+    }
+
+    &__slider {
+        max-width: 220px;
+        height: 61px;
+
+        @media(max-width: $mp4) {
+            width: 150px;
+            height: 40px;
+        }
+
+        img {
+            max-width: 220px;
+            height: 61px;
+
+            @media(max-width: $mp4) {
+                width: 150px;
+                height: 40px;
+            }
+
+            object-fit: contain;
+            object-position: center center;
+        }
+    }
+}

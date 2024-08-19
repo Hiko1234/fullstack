@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "link1": "Catalogue",
+    "link2": "About us",
+    "link3": "FAQ",
+    "link4": "Contacts",
+    "home": "To the main page"
+  },
+  "auth": {
+    "register": "Registration",
+    "authorisation": "Authorisation",
+    "login_msg": "You are successfully logged in",
+    "reg_msg": "You have successfully registered",
+    "error_email": "Incorrect email format",
+    "error_password": "Password contains less than 8 characters",
+    "error_name": "The name contains less than 3 characters",
+    "error_phone": "Помилка"
+  },
+  "download": "Download",
+  "categories": {
+    "title": "Categories",
+    "all": "All categories",
+    "categories": "Categories",
+    "clear": "No categories"
+  },
+  "list": "List",
+  "filters": {
+    "clear": "No filters",
+    "filtering": "Filtering",
+    "filters": "Filters"
+  },
+  "not_found_page": "Page not found",
+  "unknown_error": "An unknown error occurred",
+  "sort": {
+    "title": "Sort by",
+    "oldest": "Oldest",
+    "new": "Latest",
+    "high_price": "High price",
+    "low_price": "Low price"
+  },
+  "new": "New",
+  "products": "Products",
+  "popular_products": "Popular products",
+  "color": "Color",
+  "country": "Country",
+  "goods": "goods",
+  "in_stock": "In stock",
+  "no_in_stock": "Out of stock",
+  "no_goods": "No products",
+  "brand": "Brand",
+  "characteristics": "Characteristics",
+  "all_characteristics": "All characteristics",
+  "description": "Description",
+  "hero": {
+    "input_title": "Find the perfect product among thousands of options"
+  },
+  "search": "Search",
+  "similar_goods": "Similar products",
+  "review": {
+    "write": "Write a review",
+    "review": "Review",
+    "reviews": "Reviews",
+    "send": "Send a review",
+    "auth": "Please log in to submit a review!",
+    "no_reviews": "There are no reviews here yet, but you can be the first 👉",
+    "warning_text": "Please fill in the feedback field!",
+    "warning_rating": "Please rate your review!",
+    "success": "Your review has been successfully created!"
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "remove": "Product successfully deleted from favorites!",
+    "add": "The product has been successfully added to your favorites!",
+    "btn_title": "To favorite"
+  },
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone",
+  "password": "Password",
+  "cart": {
+    "title": "Cart",
+    "add_msg": "Product has been successfully added to your cart!",
+    "remove_msg": "The product has been successfully removed from the cart!",
+    "add": "Add to cart",
+    "no_in_stock": "Unfortunately, this product is temporarily out of stock. You can add it to your wishlist and be notified when it becomes available. Thank you for your understanding!"
+  },
+  "order": {
+    "total_price": "Total price",
+    "create": "Make a purchase",
+    "continue": "Continue shopping",
+    "auth": "Please log in to place your order!",
+    "created": "The order was successfully created!",
+    "no_orders": "There are no orders"
+  },
+  "delivery": "Delivery",
+  "number": "Number",
+  "date": "Date",
+  "address": "Address",
+  "status": {
+    "title": "Status",
+    "delivered": "Delivered",
+    "shipped": "Shipped",
+    "processing": "Processing"
+  },
+  "photo": "Photo",
+  "title": "Title",
+  "price": "Price",
+  "quantity": "Quantity",
+  "dashboard": {
+    "title": "Dashboard",
+    "title2": "My orders",
+    "text1": "Welcome to your personal dashboard! Here you can easily manage your orders, track delivery status, view purchase history, and update your personal information.",
+    "text2": "Your personal dashboard is designed to make your shopping experience more convenient and enjoyable!",
+    "text3": "On this page you will find all your orders made in our online store. Information about each purchase is conveniently collected here: order number, date of placement, delivery status, and product details."
+  }
+}

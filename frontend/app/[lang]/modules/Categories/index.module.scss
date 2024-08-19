@@ -1,0 +1,63 @@
+@import "../../../styles/variables.scss";
+
+.categories {
+    display: grid;
+    grid-template-columns: auto 295px;
+    gap: 20px;
+    align-items: flex-start;
+
+    @media(max-width: $mp2) {
+        grid-template-columns: 100%;
+    }
+
+    &>div {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 40px;
+
+        @media(max-width: $mp4) {
+            gap: 20px;
+        }
+    }
+
+    &>div:nth-child(2) {
+        position: sticky;
+        top: 90px;
+
+        @media(max-width: $mp2) {
+            display: none;
+        }
+    }
+
+    &>div:last-child {
+        @media(min-width: $mp2) {
+            display: none;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media(max-width: $mp4) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.brands{
+    margin: 90px 0;
+
+    @media(max-width: $mp3){
+        margin: 45px 0;
+    }
+
+    @media(max-width: $mp4){
+        margin: 32px 0;
+    }
+
+    @media(max-width: $mp6){
+        margin: 16px 0;
+    }
+}

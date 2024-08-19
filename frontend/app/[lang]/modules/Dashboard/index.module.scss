@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 32px;
+
+    @media(max-width: $mp4){
+        gap: 16px;
+    }
+
+    h1{
+        text-align: center;
+    }
+}

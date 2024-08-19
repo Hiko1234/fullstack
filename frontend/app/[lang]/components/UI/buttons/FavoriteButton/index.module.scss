@@ -1,0 +1,17 @@
+@import "../../../../../styles/variables.scss";
+
+.large{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: $primary;
+
+    @media(any-hover: hover){
+        &:hover{
+            background-color: $light;
+            box-shadow: $shadow_hover;
+        }
+    }
+}

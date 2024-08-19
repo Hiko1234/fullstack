@@ -1,0 +1,15 @@
+@import "../../../../styles/variables.scss";
+
+.footer {
+    padding: 32px 0;
+    background-color: $secondary;
+
+    @media(max-width: $mp5){
+        padding: 16px 0;
+    }
+
+    p {
+        text-align: center;
+        color: $light;
+    }
+}

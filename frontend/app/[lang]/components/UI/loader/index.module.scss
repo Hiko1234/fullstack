@@ -1,0 +1,54 @@
+@import "../../../../styles/variables.scss";
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    span {
+        width: 100px;
+        height: 100px;
+
+        position: relative;
+        border-radius: 50%;
+        animation: loader 2s linear infinite;
+
+        &::before {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 3px 2px $grey;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 3px 2px $light;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 3px 2px $light_grey;
+    }
+}

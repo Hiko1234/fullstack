@@ -1,0 +1,93 @@
+@import "../../../../../styles/variables.scss";
+
+.orders {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow-x: auto;
+
+    &__products {
+        width: 100%;    
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        table-layout: auto;
+
+        img{
+            width: 100px;
+            height: 100px;
+
+            object-fit: contain;
+            object-position: center center;
+        }
+
+        thead {
+            border-bottom: 1px solid $grey;
+
+            tr {
+
+                th {
+                    white-space: nowrap;
+                    text-align: center;
+                    padding: 16px;
+                    border-right: 1px solid $grey;
+                }
+
+                th:first-child {
+                    text-align: left;
+                }
+
+                th:last-child {
+                    text-align: right;
+                    border-right: 0;
+                }
+            }
+        }
+
+        tbody {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $grey;
+            }
+
+            tr {
+
+                td {
+                    text-align: center;
+                    padding: 16px;
+                    border-right: 1px solid $grey;
+                }
+
+                td:first-child {
+                    text-align: left;
+                }
+
+                td:last-child {
+                    text-align: right;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 32px;
+
+    @media(max-width: $mp4) {
+        gap: 16px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}

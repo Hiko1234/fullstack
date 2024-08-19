@@ -1,0 +1,11 @@
+@import "../../../../../styles/variables.scss";
+
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+
+    input[type="radio"] {
+        display: none;
+    }
+}

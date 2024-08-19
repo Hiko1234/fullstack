@@ -1,0 +1,121 @@
+@import "../../../styles/variables.scss";
+
+.categories {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 32px;
+
+    @media(max-width: $mp4) {
+        gap: 16px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media(max-width: $mp4) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+
+    &__btn {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+.hero {
+    margin: -76px 0 119px 0;
+    height: 553px;
+
+    @media(max-width: $mp1) {
+        margin-top: -68px;
+    }
+
+    @media(max-width: $mp4) {
+        margin-bottom: 70px;
+    }
+
+    &__slider {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__form {
+        position: relative;
+        z-index: 3;
+
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+
+        max-width: 1100px;
+        margin: -90.5px auto 0 auto;
+
+        padding: 45px 7.8%;
+        box-sizing: border-box;
+        background-color: $light;
+
+        @media(max-width: $mp4) {
+            gap: 5px;
+            padding: 15px;
+            margin-top: -53px;
+        }
+
+        h3 {
+            color: $primary;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &>div {
+            position: relative;
+
+            input {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px 45px;
+
+                @media(max-width: $mp4) {
+                    padding: 15px 45px 15px 15px;
+                }
+
+                border: 1px solid $primary;
+            }
+
+            button {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}
+
+.brands{
+    margin-top: 90px;
+
+    @media(max-width: $mp3){
+        margin-top: 45px;
+    }
+
+    @media(max-width: $mp4){
+        margin-top: 32px;
+    }
+
+    @media(max-width: $mp6){
+        margin-top: 16px;
+    }
+}

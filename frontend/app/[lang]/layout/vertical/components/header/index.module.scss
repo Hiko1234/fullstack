@@ -1,0 +1,68 @@
+@import "../../../../../styles/variables.scss";
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    transition: 0.5s;
+
+    @media(max-width: $mp4) {
+        width: 75px;
+    }
+
+    &__logo {
+        h1 {
+            color: $primary;
+        }
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    &__avatar {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+    }
+
+    &__avatarSkeleton {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+    }
+}

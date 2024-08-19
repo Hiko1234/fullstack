@@ -1,0 +1,173 @@
+// import variables
+@import "./variables.scss";
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+// scroll
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $light_grey2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $light;
+    border: 1px solid $primary;
+    border-radius: 11px;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+a {
+    color: $secondary;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 34px;
+    color: $secondary;
+
+    @media(max-width: $mp1) {
+        font-size: 28px;
+    }
+
+    @media(max-width: $mp4) {
+        font-size: 24px;
+    }
+
+    @media(max-width: $mp5) {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    color: $secondary;
+
+    @media(max-width: $mp4) {
+        font-size: 20px;
+    }
+}
+
+p {
+    color: $text;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media(max-width: $mp4) {
+        font-size: 14px;
+    }
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: $light;
+
+    padding: 14px 45px;
+    margin: 0;
+
+    background-color: $primary;
+    transition: 0.5s;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: $primary_dark;
+        }
+    }
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 90px;
+
+    @media(max-width: $mp3) {
+        gap: 45px;
+    }
+
+    @media(max-width: $mp4) {
+        gap: 32px;
+    }
+
+    @media(max-width: $mp6) {
+        gap: 16px;
+    }
+}
+
+.card {
+    background-color: $light;
+    box-shadow: $shadow;
+}
+
+.input {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-bottom: 1px solid $primary;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: $secondary;
+
+    outline: none;
+
+    &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        color: $grey;
+    }
+}
+
+.empty{
+    width: 100%;
+    height: 100%;
+    padding: 15px 15%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: $secondary;
+    text-align: center;
+    
+    @media(max-width: $mp5) {
+        padding: 15px 10%;
+        font-size: 14px;
+    }
+}

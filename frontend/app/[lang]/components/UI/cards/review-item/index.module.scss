@@ -1,0 +1,46 @@
+@import "../../../../../styles/variables.scss";
+
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+
+    &>div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &>div{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        img{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        h3 {
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+
+    span {
+        font-size: 14px;
+        color: $grey;
+    }
+
+    p {
+        font-size: 14px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+    }
+}

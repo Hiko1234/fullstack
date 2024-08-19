@@ -1,0 +1,22 @@
+@import "../../../../../styles/variables.scss";
+
+.small {
+    min-width: 60px;
+    min-height: 60px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: $primary;
+    transition: 0.5s;
+
+    @media(any-hover: hover) {
+        &:hover {
+            background-color: $primary_dark;
+        }
+    }
+}
+
+.large{
+    width: 100%;
+    padding: 16px;
+}

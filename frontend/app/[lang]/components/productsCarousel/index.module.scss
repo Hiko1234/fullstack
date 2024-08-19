@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+.carousel {
+    h2 {
+        text-align: center;
+        padding-bottom: 32px;
+
+        @media(max-width: $mp3) {
+            padding-bottom: 16px;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    &__slide {
+        max-width: 295px;
+    }
+}

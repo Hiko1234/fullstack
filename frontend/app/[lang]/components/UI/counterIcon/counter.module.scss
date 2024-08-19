@@ -1,0 +1,28 @@
+@import "../../../../styles/variables.scss";
+
+.counter{
+    position: relative;
+    width: fit-content;
+
+    &__count{
+        position: absolute;
+        z-index: 1;
+        top: -8.5px;
+        left: -8.5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 17px;
+        height: 17px;
+
+        border-radius: 8.5px;
+
+        background-color: $primary;
+
+        font-size: 10px;
+        font-weight: 500;
+        color: $light;
+    }
+}

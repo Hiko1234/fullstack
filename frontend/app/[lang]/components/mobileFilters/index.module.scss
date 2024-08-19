@@ -1,0 +1,78 @@
+@import "../../../styles/variables.scss";
+
+.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.5s;
+
+    &.active {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    z-index: 99;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @media(max-width: $mp1) {
+        top: 68px;
+    }
+
+    &>article {
+        max-width: 350px;
+        width: 100%;
+        height: calc(100% - 76px);
+        padding: 20px;
+
+        box-sizing: border-box;
+        background-color: $light;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media(max-width: $mp1) {
+            height: calc(100% - 68px);
+        }
+
+        h4 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: space-between;
+        }
+
+        &>section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

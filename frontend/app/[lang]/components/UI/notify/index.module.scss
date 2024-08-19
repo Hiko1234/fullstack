@@ -1,0 +1,52 @@
+@import "../../../../styles/variables.scss";
+
+.wrapper {
+    position: fixed;
+    z-index: 1002;
+    bottom: 15px;
+    left: 15px;
+
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.notify {
+    border-radius: 5px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    min-width: 288px;
+    max-width: 100%;
+
+    @media(max-width: $mp5){
+        padding: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.5s;
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $light;
+
+        @media(max-width: $mp5){
+            font-size: 12px;
+        }
+    }
+
+    &.notifyEnter {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &.notifyExit {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}

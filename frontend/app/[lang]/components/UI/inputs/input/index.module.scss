@@ -1,0 +1,29 @@
+@import "../../../../../styles/variables.scss";
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & span {
+        font-size: 14px;
+        font-weight: 400;
+        color: $primary;
+        text-align: center;
+
+        @media(max-width: $mp4) {
+            font-size: 12px;
+        }
+    }
+
+    & label {
+        font-size: 18px;
+        font-weight: 600;
+        color: $secondary;
+
+        @media(max-width: $mp4) {
+            font-size: 16px;
+        }
+    }
+}

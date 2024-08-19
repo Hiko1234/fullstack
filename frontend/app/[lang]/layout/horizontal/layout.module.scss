@@ -1,0 +1,20 @@
+@import "../../../styles/variables.scss";
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &>main {
+        padding: 116px 0 32px 0;
+        flex: 1 1 auto;
+
+        @media(max-width: $mp4){
+            padding-top: 100px;
+        }
+
+        @media(max-width: $mp5){
+           padding: 84px 0 16px 0;
+        }
+    }
+}
